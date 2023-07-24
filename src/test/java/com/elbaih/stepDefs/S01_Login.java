@@ -19,11 +19,13 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
     public void userGoToTheLoginPageOfTheSite(String url) {
        driver.get(url);
     }
-    @When("user enters the valid user name {string} and password {string}")
-    public void userEntersTheValidUserNameAndPassword(String username, String password) {
+
+    @When("user enters the user name {string} and password {string}")
+    public void userEntersTheUserNameAndPassword(String username, String password) {
         loginPage.userNameField.sendKeys(username);
         loginPage.passWordField.sendKeys(password);
     }
+
     @When("clicks the login Button")
     public void clicks_the_login_button() {
       loginPage.loginButton.click();
@@ -33,10 +35,18 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
     public void a_message_is_displayed(String string) {
 //        wait.until(ExpectedConditions.urlContains("/manager"));
         softAssert.assertTrue(driver.getCurrentUrl().contains("/manager/Managerhomepage.php"));
+     softAssert.assertTrue(driver.getTitle().contains("Manager HomePage"));
         softAssert.assertTrue(loginPage.welcomeMessage.getText().equalsIgnoreCase("Welcome To Manager's Page of Guru99 Bank"));
         softAssert.assertAll();
+
 
     }
 
 
+    @Then("a {string} popup message is displayed")
+    public void aPopupMessageIsDisplayed(String message) {
+       String actualmessage =driver.switchTo().alert().getText();
+        softAssert.assertTrue(actualmessage.contains(message));
+       softAssert.assertAll();
+    }
 }

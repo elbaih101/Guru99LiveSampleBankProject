@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="345879ba-1d34-4276-b790-b15ce04dd3d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/elbaih/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P01_LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java" afterDir="false" />
+    <list default="true" id="345879ba-1d34-4276-b790-b15ce04dd3d4" name="Changes" comment="starting the project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,20 +44,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/java maven projects/Guru99Bank"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: logging in using valid user name and password">
-    <configuration name="Scenario: logging in using valid user name and password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: invalid enteries">
+    <configuration name="Scenario: invalid enteries" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" />
       <option name="GLUE" value="com.elbaih.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Guru99Bank" />
-      <option name="NAME_FILTER" value="^logging in using valid user name and password$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^logging in using valid user name and password$&quot;" />
+      <option name="NAME_FILTER" value="^invalid enteries$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^invalid enteries$&quot;" />
       <shortenClasspath name="NONE" />
-      <option name="SUGGESTED_NAME" value="Scenario: logging in using valid user name and password" />
+      <option name="SUGGESTED_NAME" value="Scenario: invalid enteries" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -79,6 +72,8 @@
       </method>
     </configuration>
     <configuration name="Unnamed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="FILE_PATH" value="D:\java maven projects\Guru99Bank" />
+      <option name="MAIN_CLASS_NAME" value="com.elbaih.Main" />
       <module name="Guru99Bank" />
       <shortenClasspath name="NONE" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
@@ -89,11 +84,11 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
-      <item itemvalue="Cucumber Java.Scenario: logging in using valid user name and password" />
+      <item itemvalue="Cucumber Java.Scenario: invalid enteries" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: logging in using valid user name and password" />
+        <item itemvalue="Cucumber Java.Scenario: invalid enteries" />
       </list>
     </recent_temporary>
   </component>
@@ -106,6 +101,29 @@
       <option name="presentableId" value="Default" />
       <updated>1690057605926</updated>
     </task>
+    <task id="LOCAL-00001" summary="starting the project">
+      <created>1690062328475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690062328475</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="starting the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting the project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
