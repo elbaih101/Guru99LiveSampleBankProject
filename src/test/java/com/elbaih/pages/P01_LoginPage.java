@@ -16,7 +16,6 @@ public class P01_LoginPage {
     public WebElement passWordField;
 @FindBy(name = "btnLogin")
     public WebElement loginButton;
-@FindBy(css = "marquee.heading3")
-    public WebElement welcomeMessage;
+
 
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="345879ba-1d34-4276-b790-b15ce04dd3d4" name="Changes" comment="starting the project">
+    <list default="true" id="345879ba-1d34-4276-b790-b15ce04dd3d4" name="Changes" comment="adding negative scenarios in login Feature">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P02_ManagerHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P01_LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/pages/P01_LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,15 +42,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/java maven projects/Guru99Bank"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java maven projects/Guru99Bank&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: invalid enteries">
+}</component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: logging in using valid user name and password">
     <configuration name="Scenario: invalid enteries" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" />
@@ -71,6 +74,48 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: logging in using valid user name and password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" />
+      <option name="GLUE" value="com.elbaih.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99Bank" />
+      <option name="NAME_FILTER" value="^logging in using valid user name and password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^logging in using valid user name and password$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: logging in using valid user name and password" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: user enters invalid enteries &quot;&lt;name&gt;&quot; &quot;&lt;password&gt;&quot;" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/F01_LoginFeature.feature" />
+      <option name="GLUE" value="com.elbaih.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Guru99Bank" />
+      <option name="NAME_FILTER" value="^user enters invalid enteries \&quot;.*\&quot; \&quot;.*\&quot;$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^user enters invalid enteries \&quot;.*\&quot; \&quot;.*\&quot;$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: user enters invalid enteries &quot;&lt;name&gt;&quot; &quot;&lt;password&gt;&quot;" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="FILE_PATH" value="D:\java maven projects\Guru99Bank" />
       <option name="MAIN_CLASS_NAME" value="com.elbaih.Main" />
@@ -84,10 +129,14 @@
     </configuration>
     <list>
       <item itemvalue="Cucumber Java.Unnamed" />
+      <item itemvalue="Cucumber Java.Scenario: logging in using valid user name and password" />
+      <item itemvalue="Cucumber Java.Scenario: user enters invalid enteries &quot;&lt;name&gt;&quot; &quot;&lt;password&gt;&quot;" />
       <item itemvalue="Cucumber Java.Scenario: invalid enteries" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: logging in using valid user name and password" />
+        <item itemvalue="Cucumber Java.Scenario: user enters invalid enteries &quot;&lt;name&gt;&quot; &quot;&lt;password&gt;&quot;" />
         <item itemvalue="Cucumber Java.Scenario: invalid enteries" />
       </list>
     </recent_temporary>
@@ -108,22 +157,27 @@
       <option name="project" value="LOCAL" />
       <updated>1690062328475</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding negative scenarios in login Feature">
+      <created>1690234279414</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690234279414</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting the project" />
+    <MESSAGE value="adding negative scenarios in login Feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding negative scenarios in login Feature" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/elbaih/stepDefs/S01_Login.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler" memberName="locator" />
+        <PinnedItemInfo parentTag="org.testng.asserts.SoftAssert" memberName="m_errors" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

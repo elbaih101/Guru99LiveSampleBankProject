@@ -1,19 +1,31 @@
 package com.elbaih.stepDefs;
 
 import com.elbaih.pages.P01_LoginPage;
+import com.elbaih.pages.P02_ManagerHomePage;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
 
 public class S01_Login {
+//@DataProvider(name = "loginCredentials")
+//    public static Object[][] getDatafromDataprovider(){
+//    return new String[][]
+//    {
+//            {"asdasd","qeqwe"}
+//
+//    };
+//
+//    };
 
     SoftAssert softAssert= new SoftAssert();
     WebDriver driver = Hooks.driver;
 P01_LoginPage loginPage =new P01_LoginPage();
+P02_ManagerHomePage mHomePage =new P02_ManagerHomePage();
 WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
     @Given("user go to the login page of the site {string}")
     public void userGoToTheLoginPageOfTheSite(String url) {
@@ -32,11 +44,14 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
 
     }
     @Then("a {string} message is displayed")
-    public void a_message_is_displayed(String string) {
+    public void a_message_is_displayed(String managerid) {
 //        wait.until(ExpectedConditions.urlContains("/manager"));
         softAssert.assertTrue(driver.getCurrentUrl().contains("/manager/Managerhomepage.php"));
-     softAssert.assertTrue(driver.getTitle().contains("Manager HomePage"));
-        softAssert.assertTrue(loginPage.welcomeMessage.getText().equalsIgnoreCase("Welcome To Manager's Page of Guru99 Bank"));
+        softAssert.assertTrue(driver.getTitle().contains("Manager HomePage"));
+    String actualWelcomeMessage =mHomePage.welcomeMessage.getText();
+        softAssert.assertTrue(actualWelcomeMessage.equalsIgnoreCase("Welcome To Manager's Page of Guru99 Bank"));
+    String actualPoMessage =mHomePage.poMessage.getText();
+        softAssert.assertTrue(actualPoMessage.contains(managerid));
         softAssert.assertAll();
 
 
@@ -44,9 +59,15 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
 
 
     @Then("a {string} popup message is displayed")
-    public void aPopupMessageIsDisplayed(String message) {
+    public void aPopupMessageIsDisplayed(String message)  {
        String actualmessage =driver.switchTo().alert().getText();
         softAssert.assertTrue(actualmessage.contains(message));
        softAssert.assertAll();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.switchTo().alert().accept();
     }
 }
