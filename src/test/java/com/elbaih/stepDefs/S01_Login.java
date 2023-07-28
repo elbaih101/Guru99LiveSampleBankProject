@@ -2,11 +2,12 @@ package com.elbaih.stepDefs;
 
 import com.elbaih.pages.P01_LoginPage;
 import com.elbaih.pages.P02_ManagerHomePage;
-import io.cucumber.java.en.*;
+import com.elbaih.utils.Utils;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
 import java.time.Duration;
@@ -53,8 +54,14 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
     String actualPoMessage =mHomePage.poMessage.getText();
         softAssert.assertTrue(actualPoMessage.contains(managerid));
         softAssert.assertAll();
-
-
+    }
+    @Then("take ascreenshot")
+    public void takeAscreenshot() {
+        try {
+            Utils.takeSnapShot(driver,"src/test/java/com/elbaih/output/poscreenshot.png");
+        } catch (Exception e) {
+           e.printStackTrace();
+        }
     }
 
 
@@ -70,4 +77,6 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
         }
         driver.switchTo().alert().accept();
     }
+
+
 }
