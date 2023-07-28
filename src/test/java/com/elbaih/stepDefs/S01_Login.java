@@ -58,7 +58,7 @@ WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
     @Then("take ascreenshot")
     public void takeAscreenshot() {
         try {
-            Utils.takeSnapShot(driver,"src/test/java/com/elbaih/output/poscreenshot.png");
+            Utils.takeSnapShot(driver,Utils.outputfile+"poscreenshot.png");
         } catch (Exception e) {
            e.printStackTrace();
         }

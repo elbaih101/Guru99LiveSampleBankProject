@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 
 public class Utils {
-
+public static final String outputfile ="src/test/java/com/elbaih/output/";
     /**
 
      * This function will take screenshot
