@@ -6,9 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class P01_LoginPage {
-    PageFactory pageFactory=new PageFactory();
 
-    public P01_LoginPage(){pageFactory.initElements(Hooks.driver,this);}
+
+    public P01_LoginPage(){
+        PageFactory.initElements(Hooks.driver,this);}
 
     @FindBy(name = "uid")
     public WebElement userNameField;

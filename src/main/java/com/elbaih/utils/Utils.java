@@ -17,7 +17,7 @@ public class Utils {
 
      * @param fileWithPath of type string
 
-     * @throws Exception
+     * @throws Exception throws an ui exception
 
      */
     public static void takeSnapShot(WebDriver webdriver, String fileWithPath) throws Exception{

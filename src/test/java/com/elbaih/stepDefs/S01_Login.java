@@ -23,10 +23,10 @@ public class S01_Login {
 //
 //    };
 
-    SoftAssert softAssert= new SoftAssert();
-    WebDriver driver = Hooks.driver;
-P01_LoginPage loginPage =new P01_LoginPage();
-P02_ManagerHomePage mHomePage =new P02_ManagerHomePage();
+    final SoftAssert softAssert= new SoftAssert();
+    final WebDriver driver = Hooks.driver;
+final P01_LoginPage loginPage =new P01_LoginPage();
+final P02_ManagerHomePage mHomePage =new P02_ManagerHomePage();
 WebDriverWait wait=new WebDriverWait(Hooks.driver, Duration.ofSeconds(10));
     @Given("user go to the login page of the site {string}")
     public void userGoToTheLoginPageOfTheSite(String url) {

@@ -7,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class P02_ManagerHomePage {
 
-    PageFactory pageFactory=new PageFactory();
 
-    public P02_ManagerHomePage(){pageFactory.initElements(Hooks.driver,this);}
+    public P02_ManagerHomePage(){
+        PageFactory.initElements(Hooks.driver,this);}
 
 
     @FindBy(css = "tr.heading3")
